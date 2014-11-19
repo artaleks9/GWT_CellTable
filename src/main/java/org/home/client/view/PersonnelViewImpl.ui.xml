@@ -1,0 +1,35 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:c='urn:import:com.google.gwt.user.cellview.client'>
+    <ui:with field="res" type="org.home.client.PersonnelWidgetResources">
+    </ui:with>
+
+        <ui:style>
+            .cellTable {
+                align-content: space-around;
+                border-bottom: 10px solid #ccc;
+                text-align: center;
+                margin-bottom: 8px;
+                margin-top: 50px;
+            }
+        </ui:style>
+
+    <g:DockLayoutPanel unit="PX">
+        <g:north size="500">
+            <c:CellTable addStyleNames="{style.cellTable}" ui:field='cellTable' />
+        </g:north>
+
+        <g:west size="300">
+        <g:FlowPanel width="300px">
+            <g:Button ui:field="buttonGetList" text="Get List" addStyleNames="{res.style.nButton}" />
+            <g:Button ui:field="buttonAdd" text="Add" addStyleNames="{res.style.nButton}" />
+            <g:Button ui:field="buttonRemove" text="Remove" addStyleNames="{res.style.nButton}" />
+            <g:Button ui:field="buttonEdit" text="Edit" addStyleNames="{res.style.nButton}" />
+        </g:FlowPanel>
+        </g:west>
+
+        <g:east  size="300">
+            <g:Image addStyleNames="{res.style.image}" resource="{res.imagePhoto}"/>
+        </g:east>
+    </g:DockLayoutPanel>
+</ui:UiBinder>

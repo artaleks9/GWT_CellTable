@@ -1,0 +1,25 @@
+.nButton {
+    margin-left: 20px;
+    padding: 5px 7px;
+    text-decoration: none;
+    font-size:small;
+    border:1px solid #bbb;
+    border-radius: 3px;
+
+}
+.nButton:active {
+    border: 1px inset #ccc;
+}
+.nButton:hover {
+    border-color: #939393;
+}
+
+.image{
+    align-content: space-around;
+    border-bottom: 10px solid #ccc;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    width: 300px;
+    height:200px
+}
